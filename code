@@ -1,0 +1,66 @@
+#include <stdio.h>
+#include <string.h>
+#include <unistd.h>
+
+void carregar() {
+    
+	printf("\nAguarde um momento");
+    
+	for(int i = 0; i < 5; i++) {
+        printf(".");
+        fflush(stdout);
+        sleep(1);
+    }
+    printf("\n");
+}
+
+int main() {
+    
+	char resposta[10];
+	
+	printf("Oi, meu amor!\n");
+    printf("Voce me ama? (sim/nao): ");
+    fgets(resposta, 10, stdin);
+	resposta[strcspn(resposta, "\n")] = 0;
+
+    if (strcmp(resposta, "sim") == 0) {
+        carregar();
+        
+        printf("\n       ***********************************\n");
+        printf("       *      Sabia que eu te amo?       *\n");
+        printf("       *                                 *\n");
+        printf("       * Tenho muito orgulho da pessoa   *\n");
+        printf("       *  que voce e e do seu esforco.   *\n");
+        printf("       *                                 *\n");
+        printf("       * Estou aqui com voce e por voce! *\n");
+        printf("       *                                 *\n");
+        printf("       * Que seu dia seja tao especial   *\n");
+        printf("       *    quanto voce e para mim!      *\n");
+        printf("       ***********************************\n\n\n");
+
+        printf(".............@@@@@@.........@@@@@@@.............\n");
+        printf("......... @@@@@@@@@@@.....@@@@@@@@@@@...........\n");
+        printf(".......@@@@@@@@@@@@@@@...@@@@@@@@@@@@@@@........\n");
+        printf(".....@@@@@@@@@@@@@@@@@@.@@@@@@@@@@@@@@@@@@......\n");
+        printf("....@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@....\n");
+        printf("...@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@...\n");
+        printf("...@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@...\n");
+        printf("....@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@....\n");
+        printf("......@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@......\n");
+        printf(".........@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@.........\n");
+        printf("............@@@@@@@@@@@@@@@@@@@@@@@@............\n");
+        printf("...............@@@@@@@@@@@@@@@@@@...............\n");
+        printf(".................@@@@@@@@@@@@@..................\n");
+        printf("...................@@@@@@@@@....................\n");
+        printf("....................@@@@@@@.....................\n");
+        printf("......................@@@.......................\n");
+        printf(".......................@........................\n");
+        
+    } else {
+        
+		printf("\nTudo bem, eu tento de novo! ;33; \n");
+		
+    }
+
+    return 0;
+}    
